@@ -21,7 +21,7 @@ public class AutorizadorInterceptor extends HandlerInterceptorAdapter {
 
 		String uri = request.getRequestURI();
 
-		if (uri.endsWith("login") || uri.endsWith("AreaAdministrativa") || uri.contains("assets") || uri.contains("AcessoNegado")) {
+		if (uri.endsWith("login") || uri.endsWith("AreaAdministrativa") || uri.contains("assets") || uri.contains("AcessoNegado") || uri.contains("SindiValeCeres") || uri.contains("site") || uri.contains("Inicio") || uri.contains("SobreNos") || uri.contains("Noticias") || uri.contains("Contato") || uri.contains("Galeria") || uri.contains("Eventos")) {
 			return true;
 		}
 
